@@ -7,7 +7,7 @@ from setuptools import setup
 
 
 setup(name='pytest-excel',
-      version='1.5.0',
+      version='1.5.1',
       description='pytest plugin for generating excel reports',
       long_description=io.open('README.rst', encoding='utf-8', errors='ignore').read(),
       author='santosh',

@@ -121,10 +121,8 @@ class ExcelReporter(object):
             message = "xfail-marked test passes Reason: %s " % report.wasxfail
 
         else:
-            if hasattr(report.longrepr, "reprcrash"):
+            if hasattr(report.longrepr, "reprcrash") and report.longrepr.reprcrash:
                 message = report.longrepr.reprcrash.message
-            elif isinstance(report.longrepr, (unicode, str)):
-                message = report.longrepr
             else:
                 message = str(report.longrepr)
 
